@@ -181,7 +181,7 @@ const Home = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg text-slate-500 mb-4"
+            className="text-lg text-slate-500 mb-4 text-center"
           >
             Connecting people of all faiths through events and community
             support.
@@ -197,7 +197,7 @@ const Home = () => {
               Explore Events
             </motion.button>
           </Link>
-          <div className="flex gap-10 my-20">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-20 ">
             <img
               src="https://communionhub.org/static/media/event-1.e37c47c6656e8a5c0043.avif"
               alt="event"
@@ -217,7 +217,7 @@ const Home = () => {
         </motion.div>
       </section>
 
-      <section className="bg-[#121212] text-white py-16 px-6 relative">
+      <section className="bg-[#121212] text-white py-16 px-6 relative sm:px-40">
         {/* Title */}
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
@@ -301,7 +301,7 @@ const Home = () => {
         </AnimatePresence>
       </section>
 
-      <section className="bg-white text-black py-16 px-6 sm:px-20">
+      <section className="bg-white text-black py-16 px-6 sm:px-40">
         {/* Title Section */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -375,7 +375,7 @@ const Home = () => {
         </motion.div>
       </section>
 
-      <section className="bg-gradient-to-b from-gray-900 to-gray-100 text-black py-16 px-6 sm:px-20">
+      <section className="bg-gradient-to-b from-gray-900 to-gray-100 text-black py-16 px-6 sm:px-40">
         {/* Title Section */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -472,7 +472,7 @@ const Home = () => {
         </motion.div>
       </section>
 
-      <section className="bg-white py-16 px-6 sm:px-20 text-black">
+      <section className="bg-white py-16 px-6 sm:px-40 text-black">
         {/* Title Section */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -556,7 +556,7 @@ const Home = () => {
         </motion.div>
       </section>
 
-      <section className="bg-black text-white py-16 px-6 sm:px-20">
+      <section className="bg-black text-white py-16 px-6 sm:px-40">
         {/* Title Section */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -615,7 +615,7 @@ const Home = () => {
         </motion.div>
       </section>
 
-      <section className="py-16 px-6 sm:px-20 text-center">
+      <section className="py-16 px-6 sm:px-40 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold">
           Trusted by Over 1500+ Active Global Users
         </h2>
@@ -651,7 +651,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-16 px-6 sm:px-20 flex flex-col md:flex-row items-start justify-between">
+      <section className="py-16 px-6 sm:px-40 flex flex-col md:flex-row items-start justify-between">
         {/* Left Side Heading */}
         <div className="mb-8 md:mb-0">
           <h2 className="text-3xl sm:text-4xl font-bold">
@@ -699,7 +699,7 @@ const Home = () => {
         </div>
       </section>
 
-      <footer className="bg-gray-900 text-gray-300 py-12 px-6 sm:px-20">
+      <footer className="bg-gray-900 text-gray-300 py-12 px-6 sm:px-40">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start">
           {/* Left Section */}
           <div className="mb-8 md:mb-0">

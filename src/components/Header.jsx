@@ -6,7 +6,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white fixed top-0 left-0 w-full z-50">
+    <header className="bg-white fixed w-full top-0 z-50 px-40">
       <nav className="container mx-auto flex justify-between items-center p-4">
         <Link to="/">
           <img

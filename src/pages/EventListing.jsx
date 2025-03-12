@@ -96,7 +96,7 @@ const EventList = () => {
 
   return (
     <>
-      <div className="max-w-5xl mx-auto mt-25 sm:px-20 px-6">
+      <div className="max-w-5xl mx-auto mt-25 sm:px-40 px-6">
         <h2 className="text-2xl font-semibold text-center mb-6">
           Upcoming Events
         </h2>
@@ -163,7 +163,7 @@ const EventList = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
-        className="max-w-5xl mx-auto bg-gray-200 p-6 shadow-lg rounded-lg sm:px-20 px-10 mt-15 "
+        className="max-w-5xl mx-auto bg-gray-200 p-6 shadow-lg rounded-lg sm:px-40 px-6 mt-15 "
       >
         <h2 className="text-xl font-semibold mb-4">Create New Event</h2>
         <form onSubmit={handleSubmit}>
@@ -223,7 +223,7 @@ const EventList = () => {
         </form>
       </motion.div>
 
-      <section className="py-5 px-6 sm:px-20 flex flex-col md:flex-row items-start justify-between mt-15">
+      <section className="py-5 px-6 sm:px-40 flex flex-col md:flex-row items-start justify-between mt-15">
         {/* Left Side Heading */}
         <div className="mb-8 md:mb-0">
           <h2 className="text-3xl sm:text-4xl font-bold">
@@ -271,7 +271,7 @@ const EventList = () => {
         </div>
       </section>
 
-      <footer className="bg-gray-900 text-gray-300 py-12 px-6 sm:px-20">
+      <footer className="bg-gray-900 text-gray-300 py-12 px-6 sm:px-40">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start">
           {/* Left Section */}
           <div className="mb-8 md:mb-0">
