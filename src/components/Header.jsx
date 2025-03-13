@@ -2,6 +2,21 @@ import React, { useState } from "react";
 import { FiMenu, FiX, FiArrowRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
+const navLinks = [
+  {
+    path: "/",
+    text: "Home",
+  },
+  {
+    path: "/events",
+    text: "Events",
+  },
+  {
+    path: "/about",
+    text: "About",
+  },
+];
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -54,14 +69,18 @@ const Header = () => {
         }`}
       >
         <ul className="flex flex-col space-y-4 py-4 pl-6">
-          {["Home", "Events", "About"].map((item, index) => (
+          {navLinks.map((item, index) => (
             <li
               key={index}
               className="flex justify-between items-center text-gray-700 text-lg hover:text-blue-500 transition pr-6"
             >
-              <a href="#" className="w-full" onClick={() => setIsOpen(false)}>
-                {item}
-              </a>
+              <Link
+                to={item.path}
+                className="w-full"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.text}
+              </Link>
               <FiArrowRight />
             </li>
           ))}
